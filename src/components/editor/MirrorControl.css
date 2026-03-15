@@ -1,0 +1,41 @@
+.mirror-control {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  padding: 1rem;
+  border-top: 1px solid var(--border-color);
+}
+
+.mirror-label {
+  font-size: 0.875rem;
+  font-weight: 500;
+  color: var(--text-primary);
+}
+
+.mirror-options {
+  display: flex;
+  gap: 0.5rem;
+}
+
+.mirror-button {
+  flex: 1;
+  padding: 0.5rem;
+  background: var(--bg-secondary);
+  color: var(--text-primary);
+  border: 1px solid var(--border-color);
+  border-radius: 4px;
+  cursor: pointer;
+  transition: all 0.2s;
+  font-size: 1rem;
+}
+
+.mirror-button:hover {
+  background: var(--bg-tertiary);
+  border-color: var(--accent-color);
+}
+
+.mirror-button.active {
+  background: var(--accent-color);
+  color: white;
+  border-color: var(--accent-color);
+}

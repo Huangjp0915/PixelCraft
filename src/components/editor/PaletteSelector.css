@@ -1,0 +1,67 @@
+.palette-selector {
+  padding: 1rem;
+  border-top: 1px solid var(--border-color);
+  background: var(--bg-secondary);
+}
+
+.palette-label {
+  display: block;
+  font-size: 0.75rem;
+  color: var(--text-secondary);
+  text-transform: uppercase;
+  margin-bottom: 0.5rem;
+}
+
+.palette-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(32px, 1fr));
+  gap: 0.25rem;
+  max-height: 200px;
+  overflow-y: auto;
+}
+
+.palette-color {
+  width: 32px;
+  height: 32px;
+  border: 2px solid transparent;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: all 0.2s;
+  padding: 0;
+}
+
+.palette-color:hover {
+  border-color: var(--accent-color);
+  transform: scale(1.1);
+}
+
+.palette-color.selected {
+  border-color: var(--accent-color);
+  border-width: 3px;
+  box-shadow: 0 0 0 2px var(--bg-primary), 0 0 8px var(--accent-color);
+}
+
+.palette-color.transparent-color {
+  position: relative;
+  border: 2px solid #666;
+}
+
+.palette-color.transparent-color .transparent-label {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 0.6rem;
+  color: #666;
+  font-weight: bold;
+  pointer-events: none;
+}
+
+.palette-color.transparent-color.selected {
+  border-color: var(--accent-color);
+  border-width: 3px;
+}
+
+.palette-color.transparent-color.selected .transparent-label {
+  color: var(--accent-color);
+}

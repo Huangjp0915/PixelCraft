@@ -1,0 +1,135 @@
+.palette-editor {
+  padding: 1rem;
+  border-top: 1px solid var(--border-color);
+}
+
+.palette-editor-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+
+.palette-editor-header h3 {
+  font-size: 0.875rem;
+  font-weight: 600;
+  color: var(--text-primary);
+  margin: 0;
+}
+
+.palette-editor-actions {
+  display: flex;
+  gap: 0.25rem;
+}
+
+.palette-editor-actions button {
+  padding: 0.25rem 0.5rem;
+  font-size: 0.75rem;
+  background: var(--bg-secondary);
+  color: var(--text-primary);
+  border: 1px solid var(--border-color);
+  border-radius: 3px;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.palette-editor-actions button:hover {
+  background: var(--bg-tertiary);
+  border-color: var(--accent-color);
+}
+
+.palette-editor-colors {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  max-height: 300px;
+  overflow-y: auto;
+}
+
+.palette-editor-color-item {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.5rem;
+  background: var(--bg-secondary);
+  border: 1px solid var(--border-color);
+  border-radius: 4px;
+  transition: all 0.2s;
+}
+
+.palette-editor-color-item.active {
+  border-color: var(--accent-color);
+  background: var(--bg-tertiary);
+}
+
+.palette-editor-color-swatch {
+  width: 40px;
+  height: 40px;
+  border: 1px solid var(--border-color);
+  border-radius: 4px;
+  cursor: pointer;
+  flex-shrink: 0;
+}
+
+.palette-editor-color-info {
+  flex: 1;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.palette-editor-color-value {
+  font-size: 0.75rem;
+  color: var(--text-secondary);
+  font-family: monospace;
+}
+
+.palette-editor-color-buttons {
+  display: flex;
+  gap: 0.25rem;
+}
+
+.palette-editor-color-buttons button {
+  padding: 0.25rem 0.5rem;
+  font-size: 0.75rem;
+  background: transparent;
+  color: var(--text-secondary);
+  border: 1px solid var(--border-color);
+  border-radius: 3px;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.palette-editor-color-buttons button:hover {
+  background: var(--bg-tertiary);
+  color: var(--text-primary);
+  border-color: var(--accent-color);
+}
+
+.palette-editor-color-edit {
+  flex: 1;
+  display: flex;
+  gap: 0.25rem;
+  align-items: center;
+}
+
+.palette-editor-color-edit input {
+  flex: 1;
+  padding: 0.25rem 0.5rem;
+  font-size: 0.75rem;
+  font-family: monospace;
+}
+
+.palette-editor-color-edit button {
+  padding: 0.25rem 0.5rem;
+  font-size: 0.75rem;
+  background: var(--accent-color);
+  color: white;
+  border: none;
+  border-radius: 3px;
+  cursor: pointer;
+}
+
+.palette-editor-color-edit button:hover {
+  background: var(--accent-hover);
+}

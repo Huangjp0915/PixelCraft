@@ -1,0 +1,30 @@
+.status-bar {
+  height: 24px;
+  background: var(--toolbar-bg);
+  border-top: 1px solid var(--border-color);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 0.5rem;
+  font-size: 0.75rem;
+}
+
+.status-left,
+.status-right {
+  display: flex;
+  gap: 1rem;
+}
+
+.status-item {
+  color: var(--text-secondary);
+}
+
+.status-unsaved {
+  color: var(--accent-color);
+  font-weight: 500;
+}
+
+.status-project {
+  color: var(--text-secondary);
+  font-size: 0.875rem;
+}
