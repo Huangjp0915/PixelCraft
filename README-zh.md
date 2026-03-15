@@ -89,7 +89,6 @@ PixelCraft 是一款现代化的跨平台桌面应用程序，可以将普通图
 - **⌨️ 可自定义快捷键**：完全可自定义的键盘快捷键
 - **🌍 国际化**：支持英文和简体中文
 - **📐 窗口状态记忆**：自动保存和恢复窗口位置和大小
-- **🖱️ 拖拽支持**：直接将图片文件拖入应用程序
 - **📝 命令行支持**：通过命令行参数打开文件
 - **💬 提示通知**：用户友好的反馈系统
 - **📊 状态栏**：实时信息显示
@@ -97,7 +96,6 @@ PixelCraft 是一款现代化的跨平台桌面应用程序，可以将普通图
 ### 桌面集成
 
 - **📁 文件关联**：双击 `.pixproj` 文件即可打开
-- **🖱️ 拖拽支持**：将图片文件拖到窗口上
 - **📝 命令行**：从终端/命令提示符打开文件
 - **🪟 窗口管理**：记住会话之间的窗口状态
 
@@ -121,31 +119,6 @@ PixelCraft 是一款现代化的跨平台桌面应用程序，可以将普通图
 3. 按照安装向导操作
 4. 从开始菜单启动 PixelCraft
 
-### macOS
-
-1. 从 [Releases](https://github.com/Huangjp0915/PixelCraft/releases) 下载最新的 `.dmg` 文件
-2. 打开 DMG 文件
-3. 将 PixelCraft 拖到应用程序文件夹
-4. 从应用程序启动（可能需要在系统偏好设置 > 安全性与隐私中允许）
-
-### Linux
-
-#### AppImage
-```bash
-# 下载 AppImage 文件
-chmod +x PixelCraft-*.AppImage
-./PixelCraft-*.AppImage
-```
-
-#### DEB 包（Ubuntu/Debian）
-```bash
-sudo dpkg -i pixelcraft_*.deb
-sudo apt-get install -f  # 如果需要，安装依赖项
-```
-
-#### RPM 包（Fedora/RHEL）
-```bash
-sudo rpm -i pixelcraft-*.rpm
 ```
 
 ## 🚀 使用
@@ -242,23 +215,6 @@ sudo rpm -i pixelcraft-*.rpm
 #### Windows
 - Microsoft Visual C++ Build Tools 或 Visual Studio 2019+
 - Windows SDK
-
-#### macOS
-- Xcode Command Line Tools: `xcode-select --install`
-- macOS 10.13+
-
-#### Linux (Ubuntu/Debian)
-```bash
-sudo apt update
-sudo apt install libwebkit2gtk-4.0-dev \
-    build-essential \
-    curl \
-    wget \
-    libssl-dev \
-    libgtk-3-dev \
-    libayatana-appindicator3-dev \
-    librsvg2-dev
-```
 
 ### 快速开始
 
@@ -393,8 +349,6 @@ npm run tauri build -- --target x86_64-unknown-linux-gnu
 - **Windows**: `src-tauri/target/release/bundle/msi/` 或 `nsis/`
 - **macOS**: `src-tauri/target/release/bundle/macos/`
 - **Linux**: `src-tauri/target/release/bundle/appimage/` 或 `deb/`
-
-详细的构建说明，请参阅 [BUILD.md](docs/BUILD.md)。
 
 ## 🤝 贡献
 

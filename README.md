@@ -89,7 +89,6 @@ PixelCraft is a modern, cross-platform desktop application that transforms regul
 - **⌨️ Customizable Shortcuts**: Fully customizable keyboard shortcuts
 - **🌍 Internationalization**: English and Chinese (Simplified) support
 - **📐 Window State Memory**: Automatically saves and restores window position and size
-- **🖱️ Drag & Drop**: Drag image files directly into the application
 - **📝 Command Line Support**: Open files via command line arguments
 - **💬 Toast Notifications**: User-friendly feedback system
 - **📊 Status Bar**: Real-time information display
@@ -97,7 +96,6 @@ PixelCraft is a modern, cross-platform desktop application that transforms regul
 ### Desktop Integration
 
 - **📁 File Association**: Double-click `.pixproj` files to open
-- **🖱️ Drag & Drop**: Drop image files onto the window
 - **📝 Command Line**: Open files from terminal/command prompt
 - **🪟 Window Management**: Remember window state across sessions
 
@@ -120,33 +118,6 @@ PixelCraft is a modern, cross-platform desktop application that transforms regul
 2. Run the installer (`.msi` or `.exe`)
 3. Follow the installation wizard
 4. Launch PixelCraft from the Start menu
-
-### macOS
-
-1. Download the latest `.dmg` file from [Releases](https://github.com/Huangjp0915/PixelCraft/releases)
-2. Open the DMG file
-3. Drag PixelCraft to the Applications folder
-4. Launch from Applications (you may need to allow it in System Preferences > Security & Privacy)
-
-### Linux
-
-#### AppImage
-```bash
-# Download the AppImage file
-chmod +x PixelCraft-*.AppImage
-./PixelCraft-*.AppImage
-```
-
-#### DEB Package (Ubuntu/Debian)
-```bash
-sudo dpkg -i pixelcraft_*.deb
-sudo apt-get install -f  # Install dependencies if needed
-```
-
-#### RPM Package (Fedora/RHEL)
-```bash
-sudo rpm -i pixelcraft-*.rpm
-```
 
 ## 🚀 Usage
 
@@ -242,23 +213,6 @@ sudo rpm -i pixelcraft-*.rpm
 #### Windows
 - Microsoft Visual C++ Build Tools or Visual Studio 2019+
 - Windows SDK
-
-#### macOS
-- Xcode Command Line Tools: `xcode-select --install`
-- macOS 10.13+
-
-#### Linux (Ubuntu/Debian)
-```bash
-sudo apt update
-sudo apt install libwebkit2gtk-4.0-dev \
-    build-essential \
-    curl \
-    wget \
-    libssl-dev \
-    libgtk-3-dev \
-    libayatana-appindicator3-dev \
-    librsvg2-dev
-```
 
 ### Getting Started
 
@@ -393,8 +347,6 @@ npm run tauri build -- --target x86_64-unknown-linux-gnu
 - **Windows**: `src-tauri/target/release/bundle/msi/` or `nsis/`
 - **macOS**: `src-tauri/target/release/bundle/macos/`
 - **Linux**: `src-tauri/target/release/bundle/appimage/` or `deb/`
-
-For detailed building instructions, see [BUILD.md](docs/BUILD.md).
 
 ## 🤝 Contributing
 
